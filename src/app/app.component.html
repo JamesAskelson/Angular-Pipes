@@ -34,3 +34,16 @@
 <h2>{{ date | date: 'MM/dd/yyyy'}} - MM/dd/yyyy</h2>
 
 <h2>{{ date | date: 'hh:mm:ss z'}}</h2>
+
+<h1>JSON Pipe</h1>
+
+<h2>{{ user }}</h2>
+<button (click)="convertToJSON()">Jsonify User</button>
+
+<p>or with pipe interp</p>
+
+<h2>{{ user | json }}</h2>
+
+<h1>Slice pipe</h1>
+
+{{ 'Hello Angular' | slice: 0 : 6 }}

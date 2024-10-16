@@ -13,4 +13,15 @@ export class AppComponent {
   title: string = 'angular-pipes';
 
   date = new Date()
+
+  user: any = {
+    firstName: 'James',
+    lastName: 'Askelson',
+    email: 'AppleBees@gmail.com',
+    favFood: 'Pizza'
+  }
+
+  convertToJSON(){
+    this.user = JSON.stringify(this.user)
+  }
 }
